@@ -1,0 +1,185 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+/* Navigation Bar */
+.header {
+    background-color: #282e34;
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav-logo img {
+    width: 40%;
+}
+
+.nav-bar {
+    display: flex;
+    align-items: center;
+}
+
+.nav-bar-items {
+    display: flex;
+}
+
+.nav-bar-items a:hover {
+    background: #000;
+    color: rgb(236, 175, 54);
+    font-weight: bolder;
+}
+
+.nav-bar-items li {
+    /* color: #ccc;
+    text-decoration: none;
+    margin-right: 1rem;
+    font-size: 1.5rem; */
+    list-style: none;
+}
+
+.nav-bar-items a {
+    color: #ccc;
+    list-style: none;
+    text-decoration: none;
+    margin-right: 1rem;
+    font-size: 1.5rem;
+}
+
+/* End of Navigation Bar */
+
+/* Main Body */
+
+/* Section-1*/
+
+.section1 {
+    background-image: url('/explorers/img/canoeing-lake-man-1149886-1024x682.jpg');
+    background-position: center;
+    background-size: cover;
+    opacity: 0.8;
+    padding: 20%;
+}
+
+.tittle h1 {
+    text-transform: uppercase;
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 3rem;
+    color: rgb(236, 175, 54);
+
+}
+
+/* End Section-1 */
+
+/* Section-2 */
+
+.section2 {
+    background-color: rgb(237, 205, 142);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* flex-wrap: wrap; */
+    width: 100%;
+    padding-bottom: 5rem;
+}
+
+
+
+.text {
+    margin: 0.2rem 0 1rem 0;
+    color: #282e34;
+    text-align: center;
+    border-top: #000 solid;
+    border-bottom: #000 solid;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.col {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: left;
+    margin: 0 0.5rem;
+    font-size: 1rem;
+    line-height: 1.5rem;
+    width: 50%;
+    color: #282e34;
+    font-family: Copperplate, Papyrus, fantasy;
+}
+
+.col p{
+    font-size: 1.2rem;
+}
+
+.img-container {
+    float: left;
+    object-fit: cover;
+    width: 100%;
+    height: auto;
+}
+
+.img-container img {
+    border: #ccc solid 0.2rem;
+    border-radius: 15px;
+    box-shadow: 5px 5px #282e34;
+    width: 100%;
+    height: 100%;
+}
+
+.center-footer {
+    left: 0;
+    bottom: 0;
+    position: fixed;
+}
+
+.center-footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #333;
+    color: white;
+    text-align: center;
+    font-size: 1.5rem;
+    font-family: sans-serif;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* .center-footer{
+    text-align: center;
+    background: #333;
+    color: #fff;
+} */
+
+
+
+
+
+
+@media only screen and (max-width: 500px) {
+    .header {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .nav-logo {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .nav-bar-items {
+        flex-direction: column;
+    }
+
+    .row {
+        flex-direction: column;
+    }
+
+    .col {
+        width: 100%;
+    }
+}

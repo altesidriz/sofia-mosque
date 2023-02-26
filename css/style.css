@@ -42,7 +42,9 @@ header ul li a {
 }
 
 header span img {
-    padding: 100px;
+    min-width: 25px;
+    width: 50px;
+    max-width: 60px;
 }
 
 header span {
