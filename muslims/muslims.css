@@ -52,7 +52,7 @@ body {
 /* Section-1*/
 
 .section1 {
-    background-image: url('/explorers/img/canoeing-lake-man-1149886-1024x682.jpg');
+    background-image: url('/muslims/img/flying-mosque.jpg');
     background-position: center;
     background-size: cover;
     opacity: 0.8;
@@ -81,7 +81,7 @@ body {
     align-items: center;
     /* flex-wrap: wrap; */
     width: 100%;
-    padding-bottom: 5rem;
+    padding-bottom: 100%;
 }
 
 
@@ -94,45 +94,15 @@ body {
     border-bottom: #000 solid;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
+/* End Main */
 
-.col {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: left;
-    margin: 0 0.5rem;
-    font-size: 1rem;
-    line-height: 1.5rem;
-    width: 50%;
-    color: #282e34;
-    font-family: Copperplate, Papyrus, fantasy;
-}
 
-.col p{
-    font-size: 1.2rem;
-}
-
-.img-container {
-    float: left;
-    object-fit: cover;
-    width: 100%;
-    height: auto;
-}
-
-.img-container img {
-    border: #ccc solid 0.2rem;
-    border-radius: 15px;
-    box-shadow: 5px 5px #282e34;
-    width: 100%;
-    height: 100%;
-}
-
+/* Footer */
 .center-footer {
     left: 0;
     bottom: 0;
     position: fixed;
 }
-
 .center-footer {
     position: fixed;
     left: 0;
@@ -154,6 +124,8 @@ body {
     background: #333;
     color: #fff;
 } */
+
+/* End Footer */
 
 
 
