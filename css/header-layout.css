@@ -1,7 +1,7 @@
 .site-header {
     background: rgba(0, 0, 0, 0.3);
     border-bottom: 2px solid rgb(236, 175, 54);
-    padding: 0 2em;
+    padding: 1em 2em;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -26,7 +26,7 @@
     text-decoration: none;
     color: rgb(236, 175, 54);
     font-size: 2em;
-    text-shadow: 7px 4px 11px #24199E;
+    text-shadow: 7px 4px 11px #000000;
 }
 
 .right-content ul{
