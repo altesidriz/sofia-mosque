@@ -21,12 +21,13 @@ button {
 }
 
 
+/* Calculating spacing based on a CSS variable */
+/* margin:calc(0.6 * var(--white-space,1.5em)) 0 calc(0.3 * var(--white-space,1.5em)); */
+
 h1, h2, h3, h4, h5, h6 {
     font-family: "Roboto Slab", serif;
     font-weight: bold;
     line-height: 1.1;
-    /* Calculating spacing based on a CSS variable */
-    margin:calc(0.6 * var(--white-space,1.5em)) 0 calc(0.3 * var(--white-space,1.5em));
 }
 
 h1 {font-size: 3.0em;}
