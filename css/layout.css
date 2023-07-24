@@ -1,0 +1,10 @@
+.site-wrapper {
+    background-image: url(/img/20210424_170720.jpg),
+                      url(/img/djamia-frontal-wiev.jpg);
+    min-height: 500px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+

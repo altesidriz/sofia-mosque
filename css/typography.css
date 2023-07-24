@@ -1,0 +1,37 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300;400;500;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&display=swap');
+
+/* Variables */
+:root {
+    --white-space: 1.5em;
+}
+
+html {
+    font: 16px/1.4 "Noto Sans", sans-serif;
+}
+
+body,
+table,
+textarea,
+input,
+option,
+label,
+button {
+    font: inherit;
+}
+
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: "Roboto Slab", serif;
+    font-weight: bold;
+    line-height: 1.1;
+    /* Calculating spacing based on a CSS variable */
+    margin:calc(0.6 * var(--white-space,1.5em)) 0 calc(0.3 * var(--white-space,1.5em));
+}
+
+h1 {font-size: 3.0em;}
+h2 {font-size: 2.2em;}
+h3 {font-size: 1.6em; opacity: 0.6;}
+h4 {font-size: 1.4em; opacity: 0.6;}
+h5 {font-size: 1.2em; opacity: 0.6;}
+h6 {font-size: 1em; opacity: 0.6;}
