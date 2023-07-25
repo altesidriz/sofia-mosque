@@ -27,7 +27,7 @@
     padding: 0.5em;
     border-radius: 20px;
     color: rgb(236, 175, 54);
-    background: rgba(0 , 0, 0, 0.3);
+    background: rgba(0, 0, 0, 0.3);
     box-shadow: 18px 21px 45px 1px rgb(236, 175, 54);
     text-transform: uppercase;
     font-weight: bolder;
@@ -47,16 +47,19 @@
     width: 200px;
     filter: drop-shadow(40px -40px 3px rgb(255 255 255 / 0.4));
 }
+
 .quote p {
     width: 700px;
     color: #000;
     text-align: center;
     line-height: 2.4em;
 }
+
 .quote p span {
     font-weight: bold;
 }
-.quote span:last-child{
+
+.quote span:last-child {
     font-style: italic;
 }
 
@@ -92,13 +95,14 @@
 .card-content ul {
     padding-left: 5em;
 }
-.card-content > h4 {
+
+.card-content>h4 {
     text-align: center;
     padding-bottom: 2em;
 }
 
 .card-content a {
-    display:inline-block;
+    display: inline-block;
     margin: 3em 6em;
     padding: 15px;
     background: rgb(236, 175, 54);
@@ -108,6 +112,23 @@
     font-size: 15px;
     line-height: 1;
     box-shadow: 0 0 2px 0 rgba(255, 255, 255, 0.5);
+}
+
+.arrow {
+    border: solid #fff;
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 3px;
+}
+
+.right {
+    transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+}
+
+.down {
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
 }
 
 .pdfs {
@@ -145,7 +166,8 @@
 }
 
 .footer {
-    background: rgba(0 , 0, 0, 0.6);
+    background: rgb(0, 0, 0);
+    padding: 1em;
     font-size: 1.5em;
     color: #fff;
     text-align: center;
