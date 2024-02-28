@@ -1,7 +1,12 @@
-import Image from "next/image";
-import styles from "./page.module.css";
-import Navbar from "@/components/navbar/Navbar";
-import Pdfs from "@/components/pdfs/Pdfs";
+import Image from 'next/image';
+import styles from './page.module.css';
+import Navbar from '@/components/navbar/Navbar';
+import Pdfs from '@/components/pdfs/Pdfs';
+
+import info1 from '../../public/info1.jpg';
+import info2 from '../../public/info2.jpg';
+import info3 from '../../public/info3.jpg';
+
 
 export default function Home() {
   return (
@@ -30,7 +35,7 @@ export default function Home() {
             <div className={styles.cardList}>
                 <div className={styles.card}>
                   {/* <Image src='./img-more-info1.jpg' alt="more-info"/> */}
-                  <img src="./img-more-info1.jpg" alt="more-info"/>
+                  <Image src={info1} alt="more-info1"/>
                     <div className={styles.cardContent}>
                         <h4>Tourists <span>...know!</span></h4>
                         <ul type="disc">
@@ -45,31 +50,29 @@ export default function Home() {
                     </div>
                 </div>
                 <div className={styles.card}>
-                    <img src="./img-more-info2.jpg" alt="more-info" />
+                  <Image src={info2} alt="more-info2"/>
                     <div className={styles.cardContent}>
-                        <h4>Tourists <span>...know!</span></h4>
+                        <h4>Explorers<span>...understand!</span></h4>
                         <ul type="disc">
-                            <li>Islam shortly </li>
-                            <li>History of the mosque </li>
-                            <li>Architectural elements of the mosque </li>
-                            <li>The mosque in the Islam </li>
-                            <li>Panoramic pictures (360 degrees) </li>
-                            <li>Gallery (wallpapers) </li>
+                            <li>Short answers to important questions </li>
+                            <li>Logic of faith</li>
+                            <li>Oneness of God</li>
+                            <li>Hereafter</li>
+                            <li>Addresses in the Qur&apos;an to mankind</li>
                         </ul>
                         <a href="#">Explorers</a>
                     </div>
                 </div>
                 <div className={styles.card}>
-                    <img src="./img-more-info3.jpg" alt="more-info" />
+                  <Image src={info3} alt="more-info3"/>
                     <div className={styles.cardContent}>
-                        <h4>Tourists <span>...know!</span></h4>
+                        <h4>Muslims<span>...know!</span></h4>
                         <ul type="disc">
-                            <li>Islam shortly </li>
-                            <li>History of the mosque </li>
-                            <li>Architectural elements of the mosque </li>
-                            <li>The mosque in the Islam </li>
-                            <li>Panoramic pictures (360 degrees) </li>
-                            <li>Gallery (wallpapers) </li>
+                            <li>Information for muslim  community</li>
+                            <li>Sermons</li>
+                            <li>Charity campaigns</li>
+                            <li>Addresses in the Qur&apos;an to beievers</li>
+                            <li>Prayer times</li>
                         </ul>
                         <a href="#">Muslims</a>
                     </div>

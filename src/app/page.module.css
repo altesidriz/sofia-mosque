@@ -1,5 +1,6 @@
-.container {
-  background-image: url(/djamia-frontal-wiev.jpg);
+
+.container{
+  background-image: url(../../public/djamia-frontal-wiev.jpg);
   /* min-height: max-content; */
   background-attachment: fixed;
   background-position: center;
@@ -15,6 +16,14 @@
   justify-content: center;
   gap: 4em;
   text-align: center;
+}
+
+.banner h1{
+  font-size: 48px;
+}
+
+.banner p{
+  font-size: 15px;
 }
 
 .banner h1,
@@ -99,7 +108,18 @@
 
 .cardContent>h4 {
   text-align: center;
+  font-family: "Kanit";
+  font-size: 28px;
+  font-weight: 300;
   padding-bottom: 2em;
+}
+
+.cardContent span {
+  text-align: center;
+  font-family: "Kanit";
+  font-size: 28px;
+  font-weight: 500;
+  color: rgb(236, 175, 54);
 }
 
 .cardContent a {

@@ -23,7 +23,17 @@ const linkData = [
     id: 4,
     title: 'Contacts',
     url: '/contacts'
-  }
+  },
+  {
+    id: 5,
+    title: 'US',
+    url: '/'
+  },
+  {
+    id: 6,
+    title: '360°',
+    url: '/'
+  },
 ];
 
 const Navbar = () => {
