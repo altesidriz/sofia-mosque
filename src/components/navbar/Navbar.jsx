@@ -1,7 +1,8 @@
-import Link from 'next/link';
 import React from 'react';
-import styles from './navbar.module.css';
+import Link from 'next/link';
 import Image from 'next/image';
+
+import styles from './navbar.module.css';
 
 const linkData = [
   {
@@ -43,7 +44,7 @@ const Navbar = () => {
         <header className={styles.siteHeader}>
           <div className={styles.leftContent}>
             <Image  src="/djamia-banya-bashi-sofia.jpg" alt="logo" width={50} height={50}/>
-            <p className={styles.siteTitle}><Link href='/'>BanyaBashi</Link></p>
+            <p className={styles.siteTitle}><Link href='/'>Banya Bashi</Link></p>
           </div>
           <div className={styles.rightContent}>
             <nav>

@@ -1,52 +1,40 @@
 .container {
-    background-image: url(/kadi-seyfullah.jpg);
-    height: 1050px;
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
+    background-color: #fff2d1;
 }
-.container h1{
+
+.container h1 {
     text-align: center;
     padding: 40px 0;
     color: #ecaf36;
 }
+
 .cardWrapper {
     width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    row-gap: 10px;
-}
-
-.top {
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    column-gap: 5px;
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
+    row-gap: 10px;
 }
 
-.card{
+.card {
     padding: 15px 0;
-    background: #f4f3f598;
     display: flex;
     flex-direction: column;
     justify-content: baseline;
     align-items: center;
     row-gap: 10px;
-    width: 250px;
+    width: 500px;
     height: 350px;
-    border: 2px solid rgb(125, 120, 120);
     border-radius: 15px;
 }
 
-.card img{
+.card img {
     width: 200px;
     height: 200px;
     border-radius: 15px;
-    box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+    box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
     transition: transform 0.5s;
 }
 
@@ -55,25 +43,22 @@
     transform: scale(1.1);
 }
 
+.card .text:hover {
+    background: radial-gradient(
+        100px 20px at center bottom,
+        #ecaf36, #fff2d1
+      );
+}
+
 .text {
-    padding:10px;
+    padding: 10px;
+    width: 400px;
+    overflow:visible;
+    height: max-content;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     gap: 10px;
     color: #800000;
-}
-
-.bottom {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    column-gap: 5px;
-    flex-wrap: nowrap;
-}
-
-.bottom .card{
-    width: 505px;
 }
