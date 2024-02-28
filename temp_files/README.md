@@ -1,2 +1,0 @@
-# SofiaMosque
-Sofia Mosque Website
