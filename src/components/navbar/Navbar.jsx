@@ -1,5 +1,7 @@
 import Link from 'next/link';
 import React from 'react';
+import styles from './navbar.module.css';
+import Image from 'next/image';
 
 const linkData = [
   {
@@ -27,11 +29,24 @@ const linkData = [
 const Navbar = () => {
   return (
     <div>
-      <Link href='/'>BanyaBashi</Link>
       <div>
-        {linkData.map(link=>(
-          <Link href={link.url} key={link.id}>{link.title}</Link>
-        ))}
+        <header className={styles.siteHeader}>
+          <div className={styles.leftContent}>
+            <Image  src="/djamia-banya-bashi-sofia.jpg" alt="logo" width={50} height={50}/>
+            <p className={styles.siteTitle}><Link href='/'>BanyaBashi</Link></p>
+          </div>
+          <div className={styles.rightContent}>
+            <nav>
+              <ul>
+                {linkData.map(link => (
+                  <li key={link.id}>
+                    <Link href={link.url}>{link.title}</Link>
+                  </li>
+                ))}
+              </ul>
+            </nav>
+          </div>
+        </header>
       </div>
     </div>
   );

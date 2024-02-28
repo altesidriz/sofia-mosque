@@ -1,0 +1,90 @@
+.siteHeader {
+    background: rgba(0, 0, 0, 0.3);
+    border-bottom: 2px solid rgb(236, 175, 54);
+    padding: 1em 2em;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* .box {
+    width: 10em;
+    height: 20em;
+    border: 2px solid aquamarine;
+    position: absolute;
+    top: 1em;
+    left: 2em;
+}
+
+.item {
+    height: 1em;
+    background: red;
+} */
+
+.leftContent {
+    display: flex;
+    justify-content: start;
+    gap: 3em;
+    align-items: center;
+}
+
+.leftContent img {
+    display: block;
+    border-radius: 5em;
+}
+
+.leftContent a {
+    text-decoration: none;
+    color: rgb(236, 175, 54);
+    font-size: 2em;
+    text-shadow: 7px 4px 11px #000000;
+}
+
+.rightContent ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 4em;
+}
+
+.rightContent li {
+    position: relative;
+}
+
+.rightContent > ul > li li {
+    display: block;
+}
+
+.rightContent > ul > li {
+    display: inline-block;
+}
+
+
+.rightContent li,
+.rightContent a {
+    display: block;
+    text-decoration: none;
+    color: #fff;
+}
+.rightContent li:hover > a,
+.rightContent a:hover {
+    color: rgb(236, 175, 54);
+}
+
+.rightContent nav > ul ul {
+    display: none;
+    position: absolute;
+    background: rgba(0, 0, 0, 0.6);
+    border-radius: 1em;
+    padding: 0.5em;
+    margin-left: -0.5em;
+    width: 15em;
+    top: 100%;
+    left: 0;
+    line-height: 2.5em;
+}
+
+.rightContent li:hover>ul {
+    display: block;
+}

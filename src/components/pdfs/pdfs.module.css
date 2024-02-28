@@ -1,0 +1,45 @@
+.pdfs {
+    background-image: url(/img/20210424_170720.jpg);
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 800px;
+  }
+  
+  .pdfList {
+    padding: 5em;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-items: center;
+    gap: 2em;
+  }
+  
+  .pdfs h3 {
+    padding-top: 2em;
+    font-size: 2.8em;
+    font-weight: normal;
+    text-align: center;
+    color: #FFF;
+  }
+  
+  .pdfList img {
+    display: block;
+    width: 100%;
+    height: auto;
+    border-radius: 12px;
+  
+    transition-property: transform;
+    transition-duration: 0.3s;
+    transition-timing-function: ease-in-out;
+    transition-delay: 0s;
+  }
+  
+  .pdfList img:hover {
+    transform: translateY(-10px);
+    cursor: pointer;
+    box-shadow: -2px -4px 83px -3px rgb(229, 188, 76);
+  }
