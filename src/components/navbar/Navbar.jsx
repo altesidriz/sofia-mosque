@@ -19,7 +19,7 @@ const linkData = [
   },
   {
     id: 4,
-    title: 'Contscts',
+    title: 'Contacts',
     url: '/contacts'
   }
 ];
