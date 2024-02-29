@@ -22,17 +22,13 @@
     background: red;
 } */
 
-.siteTitle {
-    font-size: 10px; 
-    text-decoration: underline;
-    color: #fff;
-}
+
 
 .leftContent {
     display: flex;
     justify-content: start;
-    gap: 3em;
     align-items: center;
+    column-gap: 1em;
 }
 
 .leftContent img {
@@ -42,8 +38,9 @@
 
 .leftContent a {
     text-decoration: none;
-    color: rgb(236, 175, 54);
-    font-size: 2em;
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+    text-decoration: underline;
     text-shadow: 7px 4px 11px #000000;
 }
 

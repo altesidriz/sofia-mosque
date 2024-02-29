@@ -18,27 +18,31 @@ const IslamShortly = () => {
             <h1>Islam Shortly</h1>
             <div className={styles.cardWrapper}>
                 <div className={styles.card}>
-                    <Link href="/tourists/islam-shortly">
-                        <Image src={elif} alt="world" />
+                    <Link href="/tourists/islam-shortly/onenes-of-God">
+                        <Image src={elif} alt="elif" />
                     </Link>
                     <div className={styles.text}>
                         <h4>Onenes of God in Islam</h4>
                     </div>
                 </div>
                 <div className={styles.card}>
-                    <Image src={caligraph} alt="world" />
+                    <Link href="/tourists/islam-shortly/about-Allah">
+                        <Image src={caligraph} alt="caligraph" />
+                    </Link>
                     <div className={styles.text}>
                         <h4>About Allah</h4>
                     </div>
                 </div>
                 <div className={styles.card}>
-                    <Image src={stones} alt="world" />
+                    <Link href="/tourists/islam-shortly/pillars-of-faith">
+                        <Image src={stones} alt="stones" />
+                    </Link>
                     <div className={styles.text}>
                         <h4>Pillars of Faith</h4>
                     </div>
                 </div>
                 <div className={styles.card}>
-                    <Image src={fundamentals} alt="world" />
+                    <Image src={fundamentals} alt="fundamentals" />
                     <div className={styles.text}>
                         <h4>Pillars of Islam</h4>
                     </div>
