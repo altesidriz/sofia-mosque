@@ -1,0 +1,79 @@
+.container {
+    background-image: url(../../assets/kadi-seyfullah.jpg);
+    height: 1050px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.container h1{
+    text-align: center;
+    padding: 40px 0;
+    color: #ecaf36;
+}
+.cardWrapper {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    row-gap: 10px;
+}
+
+.top {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    column-gap: 5px;
+    flex-wrap: nowrap;
+}
+
+.card{
+    padding: 15px 0;
+    background: #f4f3f598;
+    display: flex;
+    flex-direction: column;
+    justify-content: baseline;
+    align-items: center;
+    row-gap: 10px;
+    width: 250px;
+    height: 350px;
+    border: 2px solid rgb(125, 120, 120);
+    border-radius: 15px;
+}
+
+.card img{
+    width: 200px;
+    height: 200px;
+    border-radius: 15px;
+    box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+    transition: transform 0.5s;
+}
+
+.card img:hover {
+    border: 3px solid #ecaf36;
+    transform: scale(1.1);
+}
+
+.text {
+    padding:10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    color: #800000;
+}
+
+.bottom {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    column-gap: 5px;
+    flex-wrap: nowrap;
+}
+
+.bottom .card{
+    width: 505px;
+}
