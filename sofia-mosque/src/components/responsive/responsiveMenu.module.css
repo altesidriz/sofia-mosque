@@ -1,0 +1,57 @@
+/* ResponsiveMenu.module.css */
+.responsiveMenuContainer {
+    display: none; /* Hidden by default */
+    position: fixed; /* Or absolute, depending on your layout */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0); /* Semi-transparent background */
+    z-index: 20; /* Higher than other elements */
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease-in-out, visibility 0s linear 0.3s;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .responsiveMenuContainer.open {
+    opacity: 1;
+    visibility: visible;
+    transition: opacity 0.3s ease-in-out;
+  }
+  
+  .closeButton {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background: none;
+    color: white;
+    border: none;
+    font-size: 2rem;
+    cursor: pointer;
+    z-index: 21;
+  }
+  
+  .mobileNav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+  }
+  
+  .mobileNav ul li {
+    margin-bottom: 20px;
+  }
+  
+  .mobileNav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.5rem;
+  }
+  
+  .mobileNav ul li a:hover {
+    color: #ddd;
+  }

@@ -1,11 +1,13 @@
 .siteHeader {
     position: sticky;
     top: 0;
-    background-color: rgba(0, 0, 0); 
-    color: white; 
-    padding: 15px 20px; /* Adjust padding as needed */
+    background-color: rgba(0, 0, 0);
+    color: white;
+    padding: 15px 20px;
+    /* Adjust padding as needed */
     z-index: 100;
-    transition: background-color 0.3s ease-in-out; /* Smooth transition */
+    transition: background-color 0.3s ease-in-out;
+    /* Smooth transition */
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -18,14 +20,14 @@
     top: 0;
     background-color: rgba(0, 0, 0, 0.6);
     color: white;
-    padding: 15px 20px; 
+    padding: 15px 20px;
     z-index: 100;
     transition: background-color 0.3s ease-in-out;
     display: flex;
     justify-content: space-between;
     align-items: center;
     border-bottom: 2px solid #ecaf36;
-  }
+}
 
 .leftContent {
     display: flex;
@@ -59,11 +61,11 @@
     position: relative;
 }
 
-.rightContent > ul > li li {
+.rightContent>ul>li li {
     display: block;
 }
 
-.rightContent > ul > li {
+.rightContent>ul>li {
     display: inline-block;
 }
 
@@ -74,15 +76,16 @@
     text-decoration: none;
     color: #fff;
 }
-.rightContent li:hover > a,
+
+.rightContent li:hover>a,
 .rightContent a:hover {
     color: #ecaf36;
 }
 
-.rightContent nav > ul ul {
+.rightContent nav>ul ul {
     display: none;
     position: absolute;
-    background: rgba(0, 0, 0, 0.6);
+    background: rgba(0, 0, 0, 0.2);
     border-radius: 1em;
     padding: 0.5em;
     margin-left: -0.5em;
@@ -94,4 +97,39 @@
 
 .rightContent li:hover>ul {
     display: block;
+}
+
+.burgerMenu {
+    display: none;
+    /* Hidden on larger screens */
+    cursor: pointer;
+}
+
+.burgerMenu .line {
+    width: 25px;
+    height: 3px;
+    background-color: white;
+    margin: 5px 0;
+    transition: 0.4s;
+}
+
+
+@media screen and (min-width: 768px) and (max-width:1023px) {
+    .desktopNav {
+        display: none;
+    }
+
+    .burgerMenu {
+        display: block;
+    }
+}
+
+@media (max-width: 767px) {
+    .desktopNav {
+        display: none;
+    }
+
+    .burgerMenu {
+        display: block;
+    }
 }

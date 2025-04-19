@@ -15,7 +15,7 @@ const PanoramaViewer = () => {
                   default: {
                       firstScene: "scene1",
                       sceneFadeDuration: 1000,
-                      // autoRotate: 0.5
+                      autoRotate: 0.5
                   },
                   scenes: {
                       scene1: {
