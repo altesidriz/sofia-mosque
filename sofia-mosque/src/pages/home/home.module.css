@@ -1,12 +1,11 @@
-
-.container{
+.container {
   background-image: url(../../assets/djamia-frontal-wiev.jpg);
   /* min-height: max-content; */
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
-  background-size: cover; 
-} 
+  background-size: cover;
+}
 
 .banner {
   display: flex;
@@ -18,11 +17,11 @@
   text-align: center;
 }
 
-.banner h1{
+.banner h1 {
   font-size: 48px;
 }
 
-.banner p{
+.banner p {
   font-size: 15px;
 }
 
@@ -72,83 +71,142 @@
   font-style: italic;
 }
 
+/* Cards */
+.moreInfo {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: max-content;
+  background: rgb(255, 239, 206);
+  padding: 2rem;
+}
 
 .cardList {
-  padding: 2em;
-  background: rgb(255, 239, 206);
-
   display: flex;
   flex-direction: row;
   justify-content: space-around;
-  gap: 2em;
+  align-items: center;
+  height: max-content;
+  width: 100%;
+  gap: 4rem;
 }
 
 .card {
-  flex: 0 1 30%;
-  border-radius: 12px;
+  height: 700px;
+  width: auto;
+  justify-content: start;
+  align-items: start;
 }
 
 .card img {
-  display: block;
-  box-shadow: 18px 21px 45px 1px rgb(236, 175, 54);
   width: 100%;
-  height: auto;
   border-radius: 12px;
+  box-shadow: 18px 21px 45px 1px rgb(236, 175, 54);
+  object-fit: cover;
 }
 
 .cardContent {
-  padding-top: 5em;
-  line-height: 2em;
-  /* text-align: center; */
+  height: 50%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .cardContent ul {
-  padding-left: 5em;
+  line-height: 2rem;
 }
 
 .cardContent>h4 {
-  text-align: center;
-  font-family: "Kanit";
-  font-size: 28px;
-  font-weight: 300;
-  padding-bottom: 2em;
+  font-size: 2rem;
+  font-weight: 700;
 }
 
 .cardContent span {
-  text-align: center;
-  font-family: "Kanit";
-  font-size: 28px;
-  font-weight: 500;
   color: rgb(236, 175, 54);
 }
 
 .cardContent a {
-  display: inline-block;
-  margin: 3em 6em;
-  padding: 15px;
+  padding: 15px 50px;
   background: rgb(236, 175, 54);
   color: #FFF;
   border-radius: 15px;
   text-decoration: none;
-  font-size: 15px;
-  line-height: 1;
-  box-shadow: 0 0 2px 0 rgba(255, 255, 255, 0.5);
+  font-size: 1rem;
+  box-shadow: 10px 10px 12px 0 rgb(179, 136, 50);
+  transition: transform 0.3s ease-in-out;
 }
 
-.arrow {
-  border: solid #fff;
-  border-width: 0 3px 3px 0;
-  display: inline-block;
-  padding: 3px;
+.cardContent a:hover {
+  transform: scale(1.1);
 }
 
-.right {
-  transform: rotate(-45deg);
-  -webkit-transform: rotate(-45deg);
+
+@media screen and (min-width: 768px) and (max-width:1023px) {
+
+  .moreInfo {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: auto;
+    background: rgb(255, 239, 206);
+    padding: 2rem;
+  }
+
+  .cardList {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    gap: 1rem;
+  }
+
+  .card {
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: space-between;
+  }
+
+  .cardContent {
+    height: max-content;
+  }
+
+  .cardContent ul {
+    display: none;
+    line-height: 1.5rem;
+    font-size: 0.8rem;
+    background: #000;
+  }
+
+  .cardContent a {
+    padding: 10px 20px;
+  }
 }
 
-.down {
-  transform: rotate(45deg);
-  -webkit-transform: rotate(45deg);
+@media (max-width: 767px) {
+  .moreInfo{
+    padding-bottom: 4rem;
+  }
+  .cardList {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    height: max-content;
+    width: 100%;
+    row-gap:5rem;
+  }
+  .card a {
+    width: 70%;
+    text-align: center;
+  }
 }
-

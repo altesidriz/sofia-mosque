@@ -12,14 +12,17 @@ export default function Home() {
     {
       image: info1,
       data: t('home.cards.tourists'),
+      link: '/tourists'
     },
     {
       image: info2,
       data: t('home.cards.explorers'),
+      link: '/explorers'
     },
     {
       image: info3,
       data: t('home.cards.muslims'),
+      link: '/muslims'
     },
   ];
 
@@ -52,7 +55,7 @@ export default function Home() {
                     <li key={idx}>{item}</li>
                   ))}
                 </ul>
-                <a href="#">{card.data.link}</a>
+                <a href={card.link}>{card.data.link}</a>
               </div>
             </div>
           ))}
