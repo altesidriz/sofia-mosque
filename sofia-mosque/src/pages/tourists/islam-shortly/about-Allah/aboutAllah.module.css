@@ -2,6 +2,7 @@
     background-color: #fff2d1;
     display: flex;
     flex-direction: column;
+    padding-bottom: 15px;
 }
 
 .content {
@@ -62,4 +63,46 @@
     background-color: #dd9933;
     color: #fff;
     padding: 12px;
+}
+
+
+@media screen and (min-width: 768px) and (max-width:1023px) {
+    .content {
+        flex-direction: column;
+    }
+
+    .article{
+        flex-direction: column;
+    }
+
+}
+
+@media (max-width: 767px) {
+    .content {
+        flex-direction: column;
+    }
+
+    .article{
+        flex-direction: column;
+        width: 95%;
+    }
+
+    .text{
+        width: 100%;
+    }
+
+    .image{
+        width: 80%;
+        height: 450px;
+    }
+    
+    .image img {
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+    }
+
+    .text{
+        padding: 0 25px;
+    }
 }

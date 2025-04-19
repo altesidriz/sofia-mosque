@@ -1,9 +1,10 @@
-import React from 'react'
-import UnderConstruction from '../../components/underConstruction/UnderConstruction'
+import React from 'react';
+import UnderConstruction from '../../components/underConstruction/UnderConstruction';
+import styles from './muslims.module.css';
 
 const Muslims = () => {
   return (
-    <div>
+    <div className={styles.container}>
         <UnderConstruction/>
     </div>
   )

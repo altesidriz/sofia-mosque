@@ -46,7 +46,7 @@ const IslamShortly = () => {
                             <img src={card.coverImage} alt={t(card.titleKey)} />
                         </Link>
                         <div className={styles.text}>
-                            <h4>{t(card.titleKey)}</h4>
+                            <h5>{t(card.titleKey)}</h5>
                         </div>
                     </div>
                 ))}
