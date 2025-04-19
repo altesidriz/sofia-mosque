@@ -1,9 +1,13 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import styles from './oneness.module.css'; 
+import styles from './oneness.module.css';
 import elif from '../../../../assets/tourists/islam-shortly/elif.jpg';
 
+import { useLang } from '../../../../context/LanguageContext';
+
 const Oneness = () => {
+  const { t } = useLang();
+
   return (
     <div className={styles.container}>
       <div className={styles.content}>
@@ -12,37 +16,24 @@ const Oneness = () => {
             <img src={elif} alt="elif" />
           </div>
           <div className={styles.text}>
-            <h2>Oneness of God</h2>
+            <h2>{t("oneness.title")}</h2>
             <p>
-              Faith and worship of the <b>One True God</b> is a fundamental
-              element in the religion of Muslims. Many other religions also claim
-              to believe in One God, yet they attribute partners to Him. Here are
-              some examples of association:
+              {t("oneness.intro1")} <b>{t("oneness.oneTrueGod")}</b> {t("oneness.intro2")}
             </p>
+            <p>{t("oneness.intro3")}</p>
             <ul>
-              <li>
-                Worship or ask for forgiveness from God through one of His
-                creations
-              </li>
-              <li>Giving some of God's qualities to objects or human beings</li>
-              <li>
-                Making imitations of Allah by erecting something that opposes
-                Him
-              </li>
+              {t("oneness.examples", { returnObjects: true }).map((example, idx) => (
+                <li key={idx}>{example}</li>
+              ))}
             </ul>
+            <p>{t("oneness.conclusion1")}</p>
             <p>
-              The above beliefs or actions are completely contrary to the basic
-              principles of Islam.
-            </p>
-            <p>
-              <b>The belief in the absolute Oneness of God is the essence of Islam.</b> It is the
-              foundation of all other principles, beliefs and precepts in Islam.
-              <b>Without it, everything else in religion loses its meaning.</b>
+              <b>{t("oneness.final1")}</b> {t("oneness.final2")} <b>{t("oneness.final3")}</b>
             </p>
           </div>
         </div>
         <div className={styles.link}>
-          <Link to="/tourists/islam-shortly">ISLAM SHORTLY</Link>
+          <Link to="/tourists/islam-shortly">{t("oneness.backLink")}</Link>
         </div>
       </div>
     </div>

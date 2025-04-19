@@ -9,6 +9,7 @@ import PillarsOfFaith from "./pages/tourists/islam-shortly/pillars-of-faith/Pill
 import PanoView from "./pages/panoview/PanoView";
 import Footer from "./components/footer/Footer";
 import './styles.css';
+import Contacts from "./pages/contact/Contact";
 
 
 
@@ -28,7 +29,8 @@ function App() {
               <Route path='/tourists/islam-shortly/pillars-of-faith' element={<PillarsOfFaith />} />
         {/* <Route path="/explorers" element={<Explorers />} /> 
         <Route path="/muslims" element={<Muslims />} />     
-        <Route path="/contacts" element={<Contacts />} />    */}
+           */}
+        <Route path="/contacts" element={<Contacts />} /> 
         <Route path="/360" element={<PanoView />} />
 
 

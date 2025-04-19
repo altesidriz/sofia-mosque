@@ -93,5 +93,71 @@
                 "desc": "Pictures with high quality from and of the mosque - Banya Bashi."
             }
         }
+    },
+    "islamShortly": {
+        "title": "Islam Shortly",
+        "cards": {
+            "oneness": "Oneness of God in Islam",
+            "aboutAllah": "About Allah",
+            "pillarsFaith": "Pillars of Faith",
+            "pillarsIslam": "Pillars of Islam"
+        }
+    },
+    "aboutAllah": {
+        "title": "About Allah",
+        "name": "Allah",
+        "desc1": "is the proper and personal name of the One True God.",
+        "desc2": "The name “Allah” consists of two Arabic words: “al” and “ilah”. “Al” is the definite article, and “ilah” means “God”. When these two words are connected, they form “The God,” which means “the only God” or “the only true God.”",
+        "desc3": "Nothing else can be called Allah. This word has neither a plural nor a gender. This shows its uniqueness, compared to the word “god”, which also has a plural (i.e. gods) or feminine (i.e. goddess).",
+        "points": [
+            "Allah has no partners, no equals and no rivals",
+            "Allah has no father, mother, sons, daughters or wives",
+            "Allah is worshipped directly without anyone or anything acting as an intermediary",
+            "Allah is not in need of anyone's worship",
+            "Allah is not answerable to anyone",
+            "Allah is not dependant on any person or thing, but all persons and things are dependant on Him",
+            "Allah created everything without any assistance",
+            "There is nothing above or comparable to Allah",
+            "There is nothing that exists except that it is completely subservient to Him",
+            "No one can withhold what Allah provides and no one can provide what Allah withholds",
+            "Allah alone can benefit or harm"
+        ],
+        "backLink": "ISLAM SHORTLY"
+    },
+    "oneness": {
+        "title": "Oneness of God",
+        "oneTrueGod": "One True God",
+        "intro1": "Faith and worship of the",
+        "intro2": "is a fundamental element in the religion of Muslims.",
+        "intro3": "Many other religions also claim to believe in One God, yet they attribute partners to Him. Here are some examples of association:",
+        "examples": [
+            "Worship or ask for forgiveness from God through one of His creations",
+            "Giving some of God's qualities to objects or human beings",
+            "Making imitations of Allah by erecting something that opposes Him"
+        ],
+        "conclusion1": "The above beliefs or actions are completely contrary to the basic principles of Islam.",
+        "final1": "The belief in the absolute Oneness of God is the essence of Islam.",
+        "final2": "It is the foundation of all other principles, beliefs and precepts in Islam.",
+        "final3": "Without it, everything else in religion loses its meaning.",
+        "backLink": "ISLAM SHORTLY"
+    },
+    "faith": {
+        "title": "Pillars of faith",
+        "points": [
+            "<b>Belief in the existence and oneness of Allah Almighty</b> - Muslims believe in one, unique and incomparable God, Who has no son or partner, and no one has the right to serve anyone but Him alone.",
+            "<b>Faith in the melaike (angels) of the Almighty Allah.</b>",
+            "<b>Faith in the books sent down by the Almighty Allah</b> - such as the Torah, the Psalms, the Gospel (in their original, unaltered form) and the Qur'an.",
+            "<b>Faith in all the Prophets and Messengers of Allah Almighty</b>: from the first Adam, including Noah, Abraham, Ishmael, Isaac, Jacob, Moses, Jesus and the Last Prophet - Muhammad (peace be upon them all). They all came with the same message - to serve the Creator, not the creatures.",
+            "<b>Faith in the Day of Judgment.</b>",
+            "<b>Belief in destiny</b> - both good and bad things were created by Allah. Nothing happens except through His knowledge, His will and His power. <b>This does not mean that people do not have free will.</b> Rather, Allah has given them free will to choose between good and evil, and they are responsible for their choice. <b>(His knowledge and permission do not predetermine people's choices.)</b>"
+        ],
+        "backLink": "ISLAM SHORTLY"
+    },
+    "contact": {
+        "title": "Contact Us",
+        "email": "Your Email",
+        "message": "Your Message",
+        "submit": "Send Message",
+        "alert": "Thank you! Your message has been sent."
     }
 }

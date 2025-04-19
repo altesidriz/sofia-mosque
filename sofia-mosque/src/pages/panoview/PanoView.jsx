@@ -7,7 +7,7 @@ import PanoramaViewer from '../../components/panorama/PanoramaViewer';
 
 const PanoView = () => {
   return (
-    <div style={{ display:'flex', flexDirection:'column', alignItems:'center'}}>
+    <div style={{height: 'max-content', display:'flex', flexDirection:'column', alignItems:'center'}}>
         <h1>360° Virtual Tour</h1>
         <PanoramaViewer />
     </div>
