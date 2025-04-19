@@ -159,5 +159,6 @@
         "message": "Your Message",
         "submit": "Send Message",
         "alert": "Thank you! Your message has been sent."
-    }
+    },
+    "underConstruction": "This page is still under construction. We're a small group of developers working hard to bring you the best experience. Thank you for your patience!"
 }

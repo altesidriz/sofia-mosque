@@ -28,28 +28,28 @@ const Tourists = () => {
                     <div className={styles.card} onClick={handleNavigate}>
                         <img src={world} alt="world" />
                         <div className={styles.text}>
-                            <h4>{t('tourists.cards.islamShortly.title')}</h4>
+                            <h6>{t('tourists.cards.islamShortly.title')}</h6>
                             <span>{t('tourists.cards.islamShortly.desc')}</span>
                         </div>
                     </div>
                     <div className={styles.card}>
                         <img src={banyabashi} alt="history" />
                         <div className={styles.text}>
-                            <h4>{t('tourists.cards.history.title')}</h4>
+                            <h6>{t('tourists.cards.history.title')}</h6>
                             <span>{t('tourists.cards.history.desc')}</span>
                         </div>
                     </div>
                     <div className={styles.card}>
                         <img src={selimiye} alt="architecture" />
                         <div className={styles.text}>
-                            <h4>{t('tourists.cards.architecture.title')}</h4>
+                            <h6>{t('tourists.cards.architecture.title')}</h6>
                             <span>{t('tourists.cards.architecture.desc')}</span>
                         </div>
                     </div>
                     <div className={styles.card}>
                         <img src={bridge} alt="mosqueInIslam" />
                         <div className={styles.text}>
-                            <h4>{t('tourists.cards.mosqueInIslam.title')}</h4>
+                            <h6>{t('tourists.cards.mosqueInIslam.title')}</h6>
                             <span>{t('tourists.cards.mosqueInIslam.desc')}</span>
                         </div>
                     </div>
@@ -58,14 +58,14 @@ const Tourists = () => {
                     <div className={styles.card}>
                         <img src={turn} alt="panorama" />
                         <div className={styles.text}>
-                            <h4>{t('tourists.cards.panorama.title')}</h4>
+                            <h6>{t('tourists.cards.panorama.title')}</h6>
                             <span>{t('tourists.cards.panorama.desc')}</span>
                         </div>
                     </div>
                     <div className={styles.card}>
                         <img src={rockFlower} alt="gallery" />
                         <div className={styles.text}>
-                            <h4>{t('tourists.cards.gallery.title')}</h4>
+                            <h6>{t('tourists.cards.gallery.title')}</h6>
                             <span>{t('tourists.cards.gallery.desc')}</span>
                         </div>
                     </div>

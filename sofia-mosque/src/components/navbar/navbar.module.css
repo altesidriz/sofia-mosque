@@ -3,7 +3,7 @@
     top: 0;
     background-color: rgba(0, 0, 0);
     color: white;
-    padding: 15px 20px;
+    padding: 10px 20px;
     /* Adjust padding as needed */
     z-index: 100;
     transition: background-color 0.3s ease-in-out;
@@ -20,7 +20,7 @@
     top: 0;
     background-color: rgba(0, 0, 0, 0.6);
     color: white;
-    padding: 15px 20px;
+    padding: 10px 20px;
     z-index: 100;
     transition: background-color 0.3s ease-in-out;
     display: flex;
@@ -54,7 +54,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 4em;
+    column-gap: 3em;
 }
 
 .rightContent li {
@@ -112,7 +112,6 @@
     margin: 5px 0;
     transition: 0.4s;
 }
-
 
 @media screen and (min-width: 768px) and (max-width:1023px) {
     .desktopNav {
