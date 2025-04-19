@@ -32,12 +32,6 @@
     justify-content: start;
     align-items: center;
     column-gap: 1em;
-    padding-left: 1.5rem;
-}
-
-.leftContent p{
-    padding: 0;
-    margin: 0;
 }
 
 .leftContent img {
@@ -58,11 +52,9 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 4rem;
+    gap: 4em;
 }
-.rightContent{
-    padding-right: 1.5rem;
-}
+
 .rightContent li {
     position: relative;
 }
@@ -93,6 +85,7 @@
     background: rgba(0, 0, 0, 0.6);
     border-radius: 1em;
     padding: 0.5em;
+    margin-left: -0.5em;
     width: 15em;
     top: 100%;
     left: 0;
@@ -102,17 +95,3 @@
 .rightContent li:hover>ul {
     display: block;
 }
-
-/* Tablet Styles (min-width: 768px) */
-@media screen and (min-width: 768px) and (max-width:1023px) {
-    .rightContent{
-        display: none;
-    } 
-  }
-  
-  /* Phone Styles (max-width: 767px) */
-  @media (max-width: 767px) {
-    .rightContent{
-        display: none;
-    }
-  }

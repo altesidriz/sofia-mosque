@@ -8,7 +8,6 @@ import AboutAllah from "./pages/tourists/islam-shortly/about-Allah/AboutAllah";
 import PillarsOfFaith from "./pages/tourists/islam-shortly/pillars-of-faith/PillarsOfFaith";
 import PanoView from "./pages/panoview/PanoView";
 import Footer from "./components/footer/Footer";
-import './styles.css'
 
 
 
