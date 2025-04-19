@@ -1,0 +1,97 @@
+{
+    "navbar": {
+        "siteTitle": "Banya Bashi",
+        "links": {
+            "tourists": "Tourists",
+            "explorers": "Explorers",
+            "muslims": "Muslims",
+            "contacts": "Contacts",
+            "virtual": "360°"
+        },
+        "languageToggle": "BG"
+    },
+    "pdfs": {
+        "pdfSectionTitle": "PDF-s on short knowledge about Islam"
+    },
+    "home": {
+        "banner": {
+            "title": "Banya Bashi - Mosque",
+            "description": "The only functioning mosque in the city of Sofia and one of the few active buildings with over 450 years of history!",
+            "shortHistory": "Short History"
+        },
+        "quote": {
+            "text": "Are you not aware how God sets forth the parable of a good word?",
+            "span1": "[It is] like a good tree, firmly rooted, [reaching out] with its branches towards the sky, yielding its fruit at all times by its Sustainer's leave.",
+            "span2": "And [thus it is that] God propounds parables unto men, so that they might bethink themselves [of the truth].",
+            "source": "(Qur'an - Surah Ibrahim 14:24-25)"
+        },
+        "cards": {
+            "tourists": {
+                "title": "Tourists",
+                "subtitle": "...know!",
+                "list": [
+                    "Islam shortly",
+                    "History of the mosque",
+                    "Architectural elements of the mosque",
+                    "The mosque in the Islam",
+                    "Panoramic pictures (360 degrees)",
+                    "Gallery (wallpapers)"
+                ],
+                "link": "Tourists"
+            },
+            "explorers": {
+                "title": "Explorers",
+                "subtitle": "...understand!",
+                "list": [
+                    "Short answers to important questions",
+                    "Logic of faith",
+                    "Oneness of God",
+                    "Hereafter",
+                    "Addresses in the Qur'an to mankind"
+                ],
+                "link": "Explorers"
+            },
+            "muslims": {
+                "title": "Muslims",
+                "subtitle": "...know!",
+                "list": [
+                    "Information for muslim community",
+                    "Sermons",
+                    "Charity campaigns",
+                    "Addresses in the Qur'an to believers",
+                    "Prayer times"
+                ],
+                "link": "Muslims"
+            }
+        }
+    },
+    "tourists": {
+        "title": "Tourists ... know!",
+        "cards": {
+            "islamShortly": {
+                "title": "Islam Shortly",
+                "desc": "Short basic knowledge about the religion, and not about its media img."
+            },
+            "history": {
+                "title": "History of mosque",
+                "desc": "A short history of the mosque - Banya Bashi"
+            },
+            "architecture": {
+                "title": "Architectural elements",
+                "desc": "A brief description of the architectural elements in the mosques."
+            },
+            "mosqueInIslam": {
+                "title": "Mosque in Islam",
+                "desc": "About the meaning and place of the mosque in our religion."
+            },
+            "panorama": {
+                "title": "Panorama 360º",
+                "desc": "360 degree pictures of the mosque - Banya Bash"
+            },
+            "gallery": {
+                "title": "Gallery",
+                "desc": "Pictures with high quality from and of the mosque - Banya Bashi."
+            }
+        }
+    }
+}
