@@ -9,6 +9,8 @@
     align-items: center;
     padding: 4rem;
     height: 1000px;
+    position: relative;
+    z-index: 1;
   }
   
   .pdfList {

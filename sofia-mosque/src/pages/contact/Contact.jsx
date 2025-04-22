@@ -1,10 +1,21 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import { useLang } from '../../context/LanguageContext';
 import styles from './contact.module.css';
+import Loader from '../../components/loader/Loader';
 
 const Contact = () => {
   const { t } = useLang();
   const [form, setForm] = useState({ email: '', message: '' });
+  const [iframeLoaded, setIframeLoaded] = useState(false);
+
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      if (!iframeLoaded) {
+        setIframeLoaded(true);
+      }
+    }, 500); 
+    return () => clearTimeout(timer);
+  }, [iframeLoaded]);
 
   const handleChange = (e) => {
     setForm({ ...form, [e.target.name]: e.target.value });
@@ -45,7 +56,7 @@ const Contact = () => {
         </form>
 
         <div className={styles.map}>
-          <iframe
+          {iframeLoaded ? <iframe
             title="mosque-map"
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2932.1942786470368!2d23.319835076395837!3d42.699606913581896!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40aa856f4acf41b3%3A0x8d40383a77e1364f!2sCentral%20Mosque%20of%20Sofia%20-%20Banya%20Bashi%20Mosque!5e0!3m2!1sen!2sbg!4v1745076099893!5m2!1sen!2sbg"  
             width="100%"
@@ -54,7 +65,7 @@ const Contact = () => {
             allowFullScreen=""
             loading="lazy"
             referrerPolicy="no-referrer-when-downgrade"
-          ></iframe>
+          ></iframe> : <Loader  />}
         </div>
       </div>
     </div>

@@ -50,6 +50,13 @@
     text-shadow: 7px 4px 11px #000000;
 }
 
+.rightContent{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    column-gap: 2em;
+}
+
 .rightContent ul {
     display: flex;
     justify-content: center;
@@ -97,6 +104,12 @@
 
 .rightContent li:hover>ul {
     display: block;
+}
+
+.rightContent .pano{
+    background: #ecaf3657;
+    padding: 0.5em 1em;
+    border-radius: 20px;
 }
 
 .burgerMenu {

@@ -23,7 +23,7 @@ const Navbar = () => {
     { id: 2, title: t('navbar.links.explorers'), url: '/explorers' },
     { id: 3, title: t('navbar.links.muslims'), url: '/muslims' },
     { id: 4, title: t('navbar.links.contacts'), url: '/contacts' },
-    { id: 5, title: t('navbar.links.virtual'), url: '/360' }
+    // { id: 5, title: t('navbar.links.virtual'), url: '/360' }
   ];
 
   const toggleMobileMenu = () => {
@@ -51,6 +51,7 @@ const Navbar = () => {
             </li>
           </ul>
         </nav>
+          <Link to='/360' className={styles.pano}>360°</Link>
         <div className={styles.burgerMenu} onClick={toggleMobileMenu}> {/* Use a more descriptive class */}
           <div className={styles.line}></div>
           <div className={styles.line}></div>
