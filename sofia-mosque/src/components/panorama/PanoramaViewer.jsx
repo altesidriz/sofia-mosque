@@ -4,6 +4,9 @@ import image2 from '../../assets/WEB-Pan-Balkon.jpg';
 import { AiOutlineFullscreen } from "react-icons/ai";
 import { AiOutlineFullscreenExit } from "react-icons/ai";
 
+// Helper to detect iOS
+const isIOS = /iPad|iPhone|iPod/.test(navigator.userAgent);
+
 const PanoramaViewer = () => {
     const wrapperRef = useRef(null);
     const viewerRef = useRef(null);
@@ -91,24 +94,33 @@ const PanoramaViewer = () => {
     const toggleFullscreen = () => {
         const wrapper = wrapperRef.current;
 
+        if (isIOS) {
+            wrapper.classList.toggle('ios-fullscreen');
+            setIsFullscreen(prev => !prev);
+            return;
+        }
+
         if (isFullscreen) {
-            if (document.exitFullscreen) document.exitFullscreen();
-            else if (document.webkitExitFullscreen) document.webkitExitFullscreen();
+            if (document.exitFullscreen) {
+                document.exitFullscreen();
+            } else if (document.webkitExitFullscreen) {
+                document.webkitExitFullscreen();
+            }
         } else {
-            if (wrapper.requestFullscreen) wrapper.requestFullscreen();
-            else if (wrapper.webkitRequestFullscreen) wrapper.webkitRequestFullscreen();
+            if (wrapper.requestFullscreen) {
+                wrapper.requestFullscreen();
+            } else if (wrapper.webkitRequestFullscreen) {
+                wrapper.webkitRequestFullscreen();
+            } else {
+                alert("Fullscreen not supported on this device");
+            }
         }
     };
 
     return (
         <div
             ref={wrapperRef}
-            style={{
-                position: 'relative',
-                width: '100%',
-                height: '80vh',
-                backgroundColor: '#000',
-            }}
+            className="panorama-wrapper"
         >
             <div
                 ref={viewerRef}
@@ -120,8 +132,8 @@ const PanoramaViewer = () => {
                     position: 'absolute',
                     top: '10px',
                     right: '10px',
-                    width: '35px',
-                    height: '35px',
+                    width: '45px',
+                    height: '45px',
                     display:'flex',
                     alignItems:'center',
                     justifyContent: 'center',
@@ -133,7 +145,7 @@ const PanoramaViewer = () => {
                     zIndex: 10
                 }}
             >
-                {isFullscreen ? <AiOutlineFullscreenExit size={20}/> : <AiOutlineFullscreen size={20} />}
+                {isFullscreen ? <AiOutlineFullscreenExit size={40}/> : <AiOutlineFullscreen size={40} />}
             </button>
         </div>
     );

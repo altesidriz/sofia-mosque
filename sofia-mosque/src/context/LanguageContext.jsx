@@ -7,7 +7,7 @@ const LanguageContext = createContext();
 const translations = { en, bg };
 
 export const LanguageProvider = ({ children }) => {
-  const [lang, setLang] = useState("bg"); // Default is BG
+  const [lang, setLang] = useState("en"); // Default is EN
 
   const toggleLang = () => setLang(lang === "bg" ? "en" : "bg");
 
