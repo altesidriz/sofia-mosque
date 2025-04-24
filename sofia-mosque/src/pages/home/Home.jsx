@@ -3,7 +3,10 @@ import info1 from '../../assets/info1.jpg';
 import info2 from '../../assets/info2.jpg';
 import info3 from '../../assets/info3.jpg';
 import Pdfs from '../../components/pdfs/Pdfs';
+import bgDesktop from '../../assets/djamia-frontal-wiev.jpg';
+import bgMobile from '../../assets/djamia-frontal-mobile-2.jpg';
 import { useLang } from '../../context/LanguageContext';
+import { useEffect, useState } from 'react';
 
 export default function Home() {
   const { t } = useLang();
@@ -26,8 +29,29 @@ export default function Home() {
     },
   ];
 
+  const [isMobile, setIsMobile] = useState(false);
+
+  useEffect(() => {
+    const mediaQuery = window.matchMedia('(max-width: 767px)');
+    const handleChange = () => setIsMobile(mediaQuery.matches);
+
+    handleChange(); // check on load
+    mediaQuery.addEventListener('change', handleChange);
+
+    return () => mediaQuery.removeEventListener('change', handleChange);
+  }, []);
+
+  const backgroundImage = isMobile ? bgMobile : bgDesktop;
+
   return (
-    <div className={styles.container}>
+    <div className={styles.container} 
+    style={{
+      backgroundImage: `url(${backgroundImage})`,
+      backgroundSize: 'cover',
+      backgroundPosition: 'center',
+      height: '100svh',
+      width: '100%',
+    }}>
       <section className={styles.banner}>
         <h1>{t('home.banner.title')}</h1>
         <p>{t('home.banner.description')}</p>

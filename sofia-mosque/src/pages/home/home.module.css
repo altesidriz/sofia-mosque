@@ -1,37 +1,36 @@
 .container {
-  background-image: url(../../assets/djamia-frontal-wiev.jpg);
-  /* min-height: max-content; */
-  background-attachment: fixed;
-  background-position: center;
+  /* background-image: url(../../assets/djamia-frontal-wiev.jpg);
+  background-attachment: fixed; */
+  /* background-attachment: scroll; */
+  /* background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
+  min-height: 100svh; */
   /* Needed for the pseudo-element to be positioned correctly */
 }
 
 .container::before {
   content: "";
   position: absolute;
-  top: 0;
+  top: 90px;
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.4);
-  /* Adjust the alpha value (0.4) for the desired darkness */
+  background-color: rgba(0, 0, 0, 0.4); /* or whatever overlay */
+  z-index: 0;
 }
 
 .banner {
   display: flex;
   flex-direction: column;
   border-bottom: 2px solid rgb(236, 175, 54);
-  height: 100vh;
+  height: 100svh;
   justify-content: center;
   gap: 4em;
   text-align: center;
   position: relative;
-  /* Ensure content stays above the pseudo-element */
   z-index: 1;
-  /* Ensure content stays above the pseudo-element */
 }
 
 .banner h1 {
@@ -223,10 +222,11 @@
 }
 
 @media (max-width: 767px) {
-  .container {
+  /* .container {
+    background-image: url('../../assets/djamia-frontal-mobile-2.jpg');
     background-size: cover;
-    background-position: 65%;
-  }
+    background-position: center;
+  } */
 
   .banner h1 {
     font-size: 48px;
