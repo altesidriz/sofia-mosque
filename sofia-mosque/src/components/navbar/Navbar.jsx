@@ -33,7 +33,7 @@ const Navbar = () => {
   return (
     <div className={`${styles.siteHeader} ${isScrolled ? styles.solid : ''}`}>
       <div className={styles.leftContent}>
-        <img src={Logo} alt="logo" />
+        <Link to="/"><img src={Logo} alt="logo" /></Link>
         <p className={styles.siteTitle}>
           <Link to="/">{t('navbar.siteTitle')}</Link>
         </p>

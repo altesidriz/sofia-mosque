@@ -7,6 +7,8 @@ import bgDesktop from '../../assets/djamia-frontal-wiev.jpg';
 import bgMobile from '../../assets/djamia-frontal-mobile-2.jpg';
 import { useLang } from '../../context/LanguageContext';
 import { useEffect, useState } from 'react';
+import { Link } from 'react-router-dom';
+import Footer from '../../components/footer/Footer';
 
 export default function Home() {
   const { t } = useLang();
@@ -71,7 +73,7 @@ export default function Home() {
         <div className={styles.cardList}>
           {cards.map((card, index) => (
             <div className={styles.card} key={index}>
-              <img src={card.image} alt={`more-info${index + 1}`} />
+              <Link to={card.link}><img src={card.image} alt={`more-info${index + 1}`} /></Link>
               <div className={styles.cardContent}>
                 <h4>{card.data.title}<span>{card.data.subtitle}</span></h4>
                 <ul>
@@ -87,6 +89,7 @@ export default function Home() {
       </section>
 
       <Pdfs />
+      <Footer />
     </div>
   );
 }

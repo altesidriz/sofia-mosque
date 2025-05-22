@@ -13,6 +13,7 @@ import Contacts from "./pages/contact/Contact";
 import Explorers from "./pages/explorers/Explorers";
 import Muslims from "./pages/muslims/Muslims";
 import PillarsOfIslam from "./pages/tourists/islam-shortly/pillars-of-islam/PillarsOfIslam";
+import Test from "./pages/test/Test";
 
 
 
@@ -32,12 +33,10 @@ function App() {
           <Route path='/tourists/islam-shortly/pillars-of-faith' element={<PillarsOfFaith />} />
           <Route path='/tourists/islam-shortly/pillars-of-islam' element={<PillarsOfIslam />} />
           <Route path="/explorers" element={<Explorers />} />
+          <Route path="/test" element={<Test />} />
           <Route path="/muslims" element={<Muslims />} />
           <Route path="/contacts" element={<Contacts />} />
           <Route path="/360" element={<PanoView />} />
-
-
-
         </Routes>
         <Footer />
       </BrowserRouter>
