@@ -75,8 +75,8 @@ _We're always thinking of new ways to enhance the experience, so stay tuned for 
 
 This project was lovingly developed by **[Your Name]**.
 
-* Connect on GitHub: [https://github.com/YOUR_USERNAME](https://github.com/YOUR_USERNAME)
-* Reach out via email: your@email.com
+* Connect on GitHub: [https://github.com/altesidriz(https://github.com/altesidriz)
+* Reach out via email: altes.fidaail@gmail.com
 
 ---
 
