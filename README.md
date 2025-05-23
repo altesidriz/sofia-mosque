@@ -47,7 +47,7 @@ Want to tinker with the code? It's easy!
 
 1.  **Clone the repository:**
     ```bash
-    git clone [https://github.com/YOUR_USERNAME/sofia-mosque.git](https://github.com/YOUR_USERNAME/sofia-mosque.git)
+    git clone [https://github.com/altesidriz/sofia-mosque.git](https://github.com/altesidriz/sofia-mosque.git)
     cd sofia-mosque
     ```
 2.  **Install project dependencies:**
