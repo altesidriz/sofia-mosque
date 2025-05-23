@@ -73,7 +73,7 @@ _We're always thinking of new ways to enhance the experience, so stay tuned for 
 
 ## 🧑‍💻 The Creator
 
-This project was lovingly developed by **[Your Name]**.
+This project was lovingly developed by Altes Idriz, Ismeth Hadzhi and Efsun Idriz
 
 * Connect on GitHub: [https://github.com/altesidriz(https://github.com/altesidriz)
 * Reach out via email: altes.fidaail@gmail.com
